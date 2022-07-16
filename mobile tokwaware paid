@@ -1,0 +1,7 @@
+local HWIDTable = loadstring(game:HttpGet("https://raw.githubusercontent.com/TokwaWare/HWIDWhitelist/main/Whitelist"))()
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+for i,v in pairs(HWIDTable)do
+   if v == HWID then
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/TokwaWare/TokwaWare-Mobile-Premium/main/Mobile"))()
+   end
+end
